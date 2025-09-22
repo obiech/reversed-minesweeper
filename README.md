@@ -86,30 +86,38 @@ The twist: every 10 seconds, a random hidden bomb auto-explodes. Real-time BTC p
 ---
 
 ## Project Structure
+```
 lib/
-  core/
+  features/
     auth/
-      auth_cubit.dart
-      auth_repository.dart
-      user_profile.dart
-    models/
-      position.dart
-    services/
-      binance_ticker_service.dart
-  game/
-    bloc/
-      game_bloc.dart
-      game_event.dart
-      game_state.dart
-  ui/
-    screens/
-      game_page.dart
-      login_page.dart
-    widgets/
-      board_grid.dart
-      piece_drag_data.dart
+      bloc/
+        auth_cubit.dart
+      repository/
+        auth_repository_impl.dart
+        auth_repository.dart
+      models/
+        user_profile.dart
+      screens/
+        login_page.dart
+    game/
+      bloc/
+        game_bloc.dart
+        game_event.dart
+        game_state.dart
+      screens/
+        game_page.dart
+      models/
+        position.dart
+      repository/
+        binance_ticker_repository_impl.dart
+        binance_ticker_repository.dart
+      parts/
+        cell.dart
+      widgets/
+        board_grid.dart
+        piece_drag_data.dart
   main.dart
-
+```
 # Getting Started
 
 ## Prerequisites
